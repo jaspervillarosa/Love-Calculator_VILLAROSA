@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-image: url("./bgimg.jpeg");
+    margin-top: 5em;
+    margin-bottom: 20em;
+  }
+  
+  .container {
+    text-align: center;
+    width: 800px;
+    height:100%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding-block: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+
+
+  }
+  /* .heartBiggerContainer{
+    background-image: url("./blurredHeart.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100% ;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    /* -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    justify-content: center;
+    border: solid green;
+     */
+    
+  /* } */
+  .dataContent{
+    width: 600px;
+    margin: auto;
+    line-height: 200%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 2.5rem;
+  }
+  .dataContent h1{
+    margin-bottom: 2rem;
+  }
+  .parentDiv{
+    margin-top: 100px;
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 2em;
+    
+  }
+  .leftDiv{
+    float: left;
+  }
+  .rightDiv{
+    float: right;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 250px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border-color: transparent;
+    box-shadow: 10px 10px 5px lightgray;
+
+  }
+  button {
+    background-image: linear-gradient(to right,rgb(128, 39, 70), rgb(190, 29, 29));;
+    color: white;
+    border-radius: 25px;
+    width: 200px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px lightgray;
+    margin-bottom:2em;
+  }
+  
+  button:hover {
+    opacity: 80%;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(152, 20, 20);
+    font-weight: bold;
+  }
+
+  .pop-up .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+
+  }
+  .pop-up .content{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #fff;
+    width: 600px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+  }
+
+  .pop-up .close-btn {
+    cursor: pointer;
+    position:absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+
+  }
+
+  .pop-up.active .overlay{
+    display: block;
+  }
+  .pop-up.inactive .overlay{
+    display: none;
+  }
+
+
+  .pop-up.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .result {
+    margin-top: 20rem;
+    padding: 20px;
+  }
+  
+  .percentageScale{
+    display: flex;
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+
+  }
+
+  .circular-progress{
+      position: relative;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background: conic-gradient(#a01737 3.6deg, #ededed 0deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+  }
+
+  .sm-circular-progress{
+    content: "";
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .progress-value{
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    font-weight: 600px;
+    color: #212020;
+  }
+
+  .resultgpt{
+
+    border: solid red;
+    padding: 2rem;
+    color: black;
+  }
+
+
+
+
+
+
+  
